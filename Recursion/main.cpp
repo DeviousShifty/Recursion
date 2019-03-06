@@ -7,9 +7,26 @@
 //
 
 #include <iostream>
+using namespace std;
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+double fib(double number)
+{
+    if (number == 0 || number ==1)
+    {
+        return 1;
+    }
+    else
+    {
+        return fib(number -1) + fib(number -2);
+    }
+}
+
+int main( )
+{
+    cout << fib(50) << endl;
+//    for (int number = 0; number < 10; number++)
+ //   {
+ //       cout << fib(number) << ", ";
+ //   }
     return 0;
 }
