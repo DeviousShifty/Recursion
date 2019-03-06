@@ -20,13 +20,19 @@ double fib(double number)
         return fib(number -1) + fib(number -2);
     }
 }
-
+double fact (double number)
+{
+    if (number == 0 || number == 1)
+    {
+        return 1;
+    }
+    else
+    {
+        return number * fact(number -1);
+    }
+}
 int main( )
 {
-    cout << fib(50) << endl;
-//    for (int number = 0; number < 10; number++)
- //   {
- //       cout << fib(number) << ", ";
- //   }
+    cout << fact (120) << endl;
     return 0;
 }
